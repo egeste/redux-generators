@@ -1,10 +1,10 @@
 /* eslint max-statements: 0 */
 export default class ActionReducerFactory {
   apiSpec = {
-    read: ((token, pathname, id) => throw new Error '`read` method not provided')
-    create: ((token, pathname, item) => throw new Error '`create` method not provided')
-    update: ((token, pathname, item) => throw new Error '`update` method not provided')
-    delete: ((token, pathname, item) => throw new Error '`delete` method not provided')
+    read: ((token, pathname, id) => { throw new Error('`read` method not provided') }),
+    create: ((token, pathname, item) => { throw new Error('`create` method not provided') }),
+    update: ((token, pathname, item) => { throw new Error('`update` method not provided') }),
+    delete: ((token, pathname, item) => { throw new Error('`delete` method not provided') }),
   }
 
   constructor(apiSpec) {
